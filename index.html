@@ -6,47 +6,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Festa no Céu</title>
     <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
         body{
             color: white;
             text-align: center;
+            background-color: #025949;
+        }
+        .bg{
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+        }
+        .bg .fundo img{
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100vh;
+            opacity: .5;
+        }
+        .bg .fundo .filme h1{
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .lista{
+            display: inline-block;
+            position: relative;
+            width: 35%;
+            margin-top: 2%;
+        }
+        .esquerda{
+            margin-right: 5%;
+        }
+        .direita{
+            margin-left: 5%;
+        }
+        .meio{
+            margin-top: 5%;
+        }
+        img{
+            width: 150px;
         }
         h1{
             font-size: 500%;
+            color: #1dc1a3;
         }
         h2{
             font-size: 500%;
+            font-style: italic;
         }
         h3{
             font-size: 40px;
         }
         p{
             font-size: 30px;
+            text-align: justify;
         }
-        background{
-            width: 100%;
-            height: 100%;
-            overflow: scroll;
-            background-color: #021921;
-        }
-        background img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: .5;
+        footer{
+            background-color: #02382e;
+            padding: .5%;
         }
     </style>
 </head>
-<body background="imagens/capa_principal.jpeg">
+<body>
 
-    <h1>Festa no Céu</h1>
+    <div class="bg">
+        <div class="fundo">
+            <img src="imagens/capa_principal.jpeg" width="100%">
+            <div class="filme">
+                <h1>Festa no Céu</h1>
+            </div>
+        </div>
+        
+    </div>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <u><strong><h2>Sobre</h2></strong></u>
+    <br>
+    <p>Festa no Céu é um filme lançado em Outubro de 2014 dirigido por Jorge R. Gutierrez com a participação de Diego Luna, Channing Tatum e Zoë Saldaña. É um filme de animação que conta a história de um jovem chamado Manolo, que sonha em se tornar um músico famoso, mas sua família tem uma tradição de toureiros. Quando ele é transportado para o mundo dos mortos, ele deve lutar contra os desafios e provar seu amor pela música para voltar à vida. No caminho, ele faz amizade com a graciosa La Muerte e o traiçoeiro Xibalba, e se apaixona por uma bela e teimosa mulher chamada Maria. O filme apresenta temas de tradição, amor, morte e amizade, tudo isso com um visual deslumbrante e uma trilha sonora emocionante. No final, Manolo aprende a valorizar sua herança cultural e seguir seu coração para se tornar o músico que sempre quis ser.</p>
 
-    <h2>Elenco</h2>
+    <u><strong><h2>Elenco</h2></strong></u>
+    <div class="elenco">
+        <div class="lista esquerda">
+            <img src="imagens/manolo.jpeg">
+            <h3>Manolo</h3>
+            <p>Dublado originalmente por Diego Luna e no Brasil por Marcelo Coutinho.</p>
+            <br>
+        </div>
 
-    <img src="imagens/capa_joaquim.jpg" width="25%">
-    <h3>A lenda, Joaquim.</h3>
-    <p>Joaquim, após a morte de seu pai se muda para não sei onde e acaba virando um herói para todos de  por ser extremamente corajoso e sempre sair ileso em suas brigas. <br> Dublado originalmente por Channing Tantun e no Brasil por , Joaquim é um personagem que queria glória e o amor de Maria, porém fez uso de coisas erradas para conseguir alcançar seu objetivo. Joaquim definitivamente é um sonserino. <br> Mas, entre altos e baixos descobre que não é fazendo uso de um amuleto mágico que ele conseguirá ser lembrado como um herói, como fora seu pai.</p>
+        <div class="lista direita">
+            <img src="imagens/maria_posada.jpeg" >
+            <h3>Maria</h3>
+            <p>Dublada originalmente por Zoë Saldaña e no Brasil por Lina Mendes.</p>
+            <br>
+        </div>
+    </div>
+    <div class="elenco">
+        <div class="lista esquerda">
+            <img src="imagens/joaquim.jpeg" width="150px">
+            <h3>Joaquim</h3>
+            <p>Dublado originalmente por Channing Tantun e no Brasil por Thiago Lacerda.</p>
+        </div>
+    
+        <div class=" lista direita">
+            <img src="imagens/la_muerte.jpeg" >
+            <h3>La Muerte</h3>
+            <p>Dublada originalmente por Kate del Castillo e no Brasil por Marisa Orth.</p>
+            <br>
+        </div>
+    </div>
+<div class="elenco">
+    <div class="lista meio">
+        <img src="imagens/xibalba.jpeg" >
+        <h3>Xibalba</h3>
+        <p>Dublado originalmente por Ron Perlman e no Brasil por Sérgio Fortuna.</p>
+        <br>
+    </div>
+</div>
+
+<br>
+
+<footer>
+    Shayra Kelly&copy;
+</footer>
 
 </body>
 </html>
